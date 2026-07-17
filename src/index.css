@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-anthracite: #2a2a2a;
+  --color-deep-black: #121212;
+  --color-neon-blue: #002f69;
+  --color-light-blue: #4facfe;
+  --font-sans: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#f4f7fb] text-slate-800 font-sans m-0 p-0 overflow-x-hidden;
+}
+
+@layer utilities {
+  .glow-button {
+    @apply shadow-[0_0_15px_rgba(79,172,254,0.4)] hover:shadow-[0_0_25px_rgba(79,172,254,0.8)] transition-shadow duration-300;
+  }
+}
