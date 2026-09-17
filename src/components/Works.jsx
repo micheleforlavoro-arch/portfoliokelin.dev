@@ -11,7 +11,12 @@ const projects = [
     title: 'FL Energy',
     description: 'Restyling e digitalizzazione della presenza web per FL Energy. Ho creato un\'interfaccia focalizzata sulla conversione, ottimizzando la navigazione tra i servizi fotovoltaici e facilitando il contatto diretto per le richieste di preventivo. Risultato: un sito corporate moderno che riflette affidabilità e professionalità tecnica.',
     image: '/fl-energy.png',
-    link: 'https://fl-energy.vercel.app/',
+  },
+  {
+    title: 'AG Technology',
+    description: 'Sviluppo della piattaforma web per AG Technology, partner commerciale e distributivo di fiducia per imprese, installatori, professionisti e operatori del settore energetico. Il progetto si focalizza su un\'interfaccia pulita, altamente professionale e orientata alla conversione B2B.',
+    image: '/ag-technology.jpg',
+    link: 'https://ag-technology.vercel.app/',
   },
   {
     title: 'Novum Store',
@@ -64,7 +69,7 @@ const Works = () => {
                     </svg>
                     Progetto Privato / B2B
                   </div>
-                ) : (
+                ) : project.link && (
                   <a 
                     href={project.link} 
                     target="_blank"
